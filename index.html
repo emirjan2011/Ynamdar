@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ynamdar - Online Market</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+<body>
+    
+    <main>
+        <h1>Maslahat berilýän harytlar 🌟 <i class='bx bx-right-arrow-alt'></i></h1>
+            <div class="maslahat">
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/NSQ205.01.036_1.jpg?version=20" alt="">
+                </div>
+                <div class="info">
+                    <h3>Nesquik</h3>
+                    <p class="one-length">Ertirlik Nesquik 225 gr</p>
+                    <h3>30.80 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/TCH1503006P_1.jpg?version=12" alt="">
+                </div>
+                <div class="info">
+                    <h3>Tchibo</h3>
+                    <p>Kofe Tchibo "Gold Selection", çüýşe gapda 190 gr + Kofe Tchibo "Gold Selection", paket 40 gr</p>
+                    <h3>123.20 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/KND1101026_1.jpg?version=66" alt="">
+                </div>
+                <div class="info">
+                    <h3>Kinder</h3>
+                    <p class="one-length">Kinder "Sýurpriz" Licence Dino 20 gr</p>
+                    <h3>30.80 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/AGZ2416001_1.jpg?version=3" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ak Güzer</h3>
+                    <p class="one-length">Guradylan alma "Ak Güzer" 50 gr</p>
+                    <h3>20.40 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/BBM110505303_1.jpg?version=53" alt="">
+                </div>
+                <div class="info">
+                    <h3>Bebem</h3>
+                    <p>Podguznik Bebem Natural 4 Maxi (52 sany) + Geýim üçin ýumşadyjy Bingo Soft "Chakra" 1000 ml</p>
+                    <h3>118.00 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="reklams">
+            <img src="https://cdn.ynamdar.com/ynamdar/images/banner/tm_a534f2a8-e2b7-4fbd-a982-2755cf24eab1.jpg?version=2" alt="">
+            <img src="https://cdn.ynamdar.com/ynamdar/images/banner/tm_8458e933-9311-4709-a4c9-44af99e68d04.jpg?version=1" alt="">
+        </div>
+        <h1>Aksiýadaky harytlar<i class='bx bx-right-arrow-alt'></i></h1>
+        <div class="aksiya">
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/FML120106001_1.jpg?version=519" alt="">
+                    <p>-11%</p>
+                </div>
+                <div class="info">
+                    <h3>Familia</h3>
+                    <p class="two-length">Hajathana kagyzy Familia "Ocean Fresh" (4 rulon)</p>
+                    <h3>21.70 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/BIC0401070201P_1.jpg?version=3" alt="">
+                    <p>-17%</p>
+                </div>
+                <div class="info">
+                    <h3>BIC</h3>
+                    <p class="three-line">Bir gezeklik päkiler BIC 3 "Miss Soleil" (4 sany) + Bir gezeklik päki BIC Flex 3 "Classic" (1 sany)</p>
+                    <h3>87.50 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/QCLN178244P_1.jpg?version=2" alt="">
+                    <p>-14%</p>
+                </div>
+                <div class="info">
+                    <h3>Q Clean</h3>
+                    <p class="three-line">Geýim üçin ýumşadyjy Q Clean "Gül Bakjasy" 4 L + Gap-gaç ýuwmak üçin gubka New Eco (5 sany)</p>
+                    <h3>62.40 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/BIC0401040201P_1.jpg?version=4" alt="">
+                    <p>-25%</p>
+                </div>
+                <div class="info">
+                    <h3>BIC</h3>
+                    <p class="three-line">Bir gezeklik päkiler BIC Flex 3 "Classic" (3 sany) + Bir gezeklik päki BIC 3 "Miss Soleil" (1 sany)</p>
+                    <h3>65.30 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="https://cdn.ynamdar.com/ynamdar/images/product/DLN50007_1.jpg?version=12" alt="">
+                    <p>-21%</p>
+                </div>
+                <div class="info">
+                    <h3>Dalin</h3>
+                    <p class="one-length">Çagalar üçin şampun Dalin 750 ml</p>
+                    <h3>63.40 m.</h3>
+                </div>
+                <div class="btns">
+                    <button class="like"><i class='bx bx-heart'></i></button>
+                    <button class="addcart"><i class='bx bx-cart' ></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="reklams">
+            <img src="https://cdn.ynamdar.com/ynamdar/images/banner/tm_e87517a3-4e5d-4bca-bef2-027fee0b4b7e.jpg?version=0" alt="">
+            <img src="https://cdn.ynamdar.com/ynamdar/images/banner/tm_c2fe7126-bc00-4bfc-ba39-9834f9c95d98.jpg?version=0" alt="">
+        </div>
+    </main>
+    <nav>
+        <div class="left">
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="links">
+                <a href="#">Baş Sahypa</a>
+                <a href="#">Suwlar</a>
+                <a href="#">Iýmitler</a>
+                <a href="#">Biz Barada</a>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#"><i class='bx bx-store'></i></a>
+            <a href="#"><i class='bx bxs-user'></i></a>
+        </div>
+    </nav>
+</body>
+</html>
